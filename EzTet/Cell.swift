@@ -16,7 +16,7 @@ class Cell: UITableViewCell {
     var kCellHeight: CGFloat = 200
     var kLabelHeight: CGFloat = 50
 
-    override func addSubview(_ view: UIView) {
+    func addSubviews() {
         if(imageViewCell == nil){
             imageViewCell = UIImageView(frame: CGRect(x: 0, y: 0, width: kCellWidth, height: kCellHeight))
             imageViewCell.layer.borderColor = tintColor.cgColor
